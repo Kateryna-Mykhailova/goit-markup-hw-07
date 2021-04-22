@@ -572,7 +572,7 @@ img {
   text-align: right;
 }
 
-.footer-form-input {
+.footer-form__input {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -583,20 +583,20 @@ img {
   border-radius: 4px;
 }
 
-.footer-form-input::placeholder {
+.footer-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   align-items: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.button--primari.subscribe {
+.button-subscribe {
   display: inline-flex;
   align-items: center;
   padding: 10px 28px;
 }
 
-.button--primari.subscribe::after {
+.button-subscribe::after {
   top: 0px;
   right: 0px;
   margin-left: 10px;
@@ -782,12 +782,12 @@ img {
 
 /* Форма */
 
-.form-conteiner {
+.modal-form__conteiner {
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
 }
-.form-title {
+.modal-form__title {
   margin-bottom: 12px;
   padding: 0px;
   font-family: Roboto;
@@ -798,19 +798,19 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.form-field {
+.modal-form__field {
   display: flex;
   flex-direction: column;
 }
 
-.form-field-text {
+.modal-form__text {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
-.form-icon-container {
+.modal-form__icon-container {
   position: relative;
 }
 .icon-form {
@@ -824,7 +824,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input {
+.modal-form__input {
   display: block;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -839,14 +839,14 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus + .icon-form {
+.modal-form__input:focus + .icon-form {
   fill: var(--accent-color);
 }
-.form-input:focus {
+.modal-form__input:focus {
   border: 1px solid var(--accent-color);
   outline: 1px solid var(--accent-color);
 }
-.comment {
+.modal-form__comment {
   padding: 12px 16px;
   margin-bottom: 20px;
   font-size: 12px;
@@ -855,28 +855,25 @@ img {
   color: rgba(117, 117, 117, 0.5);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  resize: none;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.comment:focus {
+.modal-form__comment:focus {
   border: 1px solid var(--accent-color);
   outline: 1px solid var(--accent-color);
 }
 
-textarea {
-  resize: none;
-}
-
 /* Чекбокс */
 
-.checkbox-label {
+.checkbox__label {
   position: relative;
   display: inline-block;
   align-items: center;
   text-align: center;
   margin-bottom: 30px;
 }
-.check-box {
+.checkbox {
   position: absolute;
   display: inline-block;
   left: 12px;
@@ -887,7 +884,7 @@ textarea {
   background-image: url(../images/icon_form/checkoff.svg);
 }
 
-.checkbox_input {
+.checkbox__input {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -898,18 +895,18 @@ textarea {
   overflow: hidden;
 }
 
-.checkbox_input:checked + .check-box {
+.checkbox__input:checked + .checkbox {
   background-image: url(../images/icon_form/checkon.svg);
   fill: #ffffff;
   background-color: var(--accent-color);
 }
 
-.checkbox-text {
+.checkbox__text {
   padding-left: 36px;
   font-size: 14px;
   line-height: 1.7;
 }
-.checkbox-link {
+.checkbox__link {
   font-size: 14px;
   line-height: 1.7;
   color: var(--accent-color);
