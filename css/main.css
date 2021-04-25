@@ -127,8 +127,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button--primari:hover,
-.button--primari:focus {
+.button--primari:hover, .button--primari:focus {
   background: var(--accent-primari-btn-bg);
 }
 
@@ -226,8 +225,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -276,8 +274,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-header__link:hover,
-.contacts-header__link:focus {
+.contacts-header__link:hover, .contacts-header__link:focus {
   color: var(--accent-color);
 }
 
@@ -338,6 +335,11 @@ img {
   padding-top: 94px;
 }
 
+.features__topic {
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
 .features__list {
   display: flex;
   flex-wrap: wrap;
@@ -351,11 +353,6 @@ img {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 30px * 4) / 4);
-}
-
-.features__topic {
-  color: var(--title-text-color);
-  margin-bottom: 10px;
 }
 
 .features__item::before {
@@ -438,6 +435,12 @@ img {
   padding-bottom: 94px;
 }
 
+.team__container {
+  padding-top: 30px;
+  padding-bottom: 16px;
+  background: var(--header-bg);
+}
+
 .team__list {
   display: flex;
   flex-wrap: wrap;
@@ -455,12 +458,6 @@ img {
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.team__container {
-  padding-top: 30px;
-  padding-bottom: 16px;
-  background: var(--header-bg);
 }
 
 .team__name {
@@ -488,9 +485,8 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icons__link:hover .icon,
-.social-icons__link:focus .icon {
-  fill: var(--accent-text-color);
+.social-icons__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-icons__link {
@@ -503,13 +499,13 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icons__link:hover,
-.social-icons__link:focus {
+.social-icons__link:hover, .social-icons__link:focus {
   background: var(--accent-color);
 }
 
-.social-icons__item:not(:last-child) {
-  margin-right: 10px;
+.social-icons__link:hover .icon,
+.social-icons__link:focus .icon {
+  fill: var(--accent-text-color);
 }
 
 /* Постоянные клиенты */
@@ -543,8 +539,7 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -611,8 +606,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-footer__link:hover,
-.contacts-footer__link:focus {
+.contacts-footer__link:hover, .contacts-footer__link:focus {
   color: var(--accent-color);
 }
 
@@ -622,6 +616,10 @@ img {
 
 .footer-icons {
   display: inline-flex;
+}
+
+.footer-icons__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-icons__link .icon {
@@ -641,13 +639,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icons__link:hover,
-.footer-icons__link:focus {
+.footer-icons__link:hover, .footer-icons__link:focus {
   background: var(--accent-color);
-}
-
-.footer-icons__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .footer-form {
@@ -713,8 +706,7 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects__link:hover,
-.projects__link:focus {
+.projects__link:hover, .projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -866,13 +858,13 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form__input:focus + .icon-form {
-  fill: var(--accent-color);
-}
-
 .modal-form__input:focus {
   border: 1px solid var(--accent-color);
   outline: 1px solid var(--accent-color);
+}
+
+.modal-form__input:focus + .icon-form {
+  fill: var(--accent-color);
 }
 
 .modal-form__comment {

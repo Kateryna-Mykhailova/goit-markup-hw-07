@@ -14,11 +14,11 @@
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-}
 
-.footer-form__input::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }

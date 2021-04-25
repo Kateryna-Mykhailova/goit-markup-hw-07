@@ -55,15 +55,17 @@
   border-radius: 4px;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border: 1px solid var(--accent-color);
+    outline: 1px solid var(--accent-color);
+  }
 }
 
 .modal-form__input:focus + .icon-form {
   fill: var(--accent-color);
 }
-.modal-form__input:focus {
-  border: 1px solid var(--accent-color);
-  outline: 1px solid var(--accent-color);
-}
+
 .modal-form__comment {
   padding: 12px 16px;
   margin-bottom: 20px;
@@ -76,10 +78,11 @@
   resize: none;
 
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-form__comment:focus {
-  border: 1px solid var(--accent-color);
-  outline: 1px solid var(--accent-color);
+
+  &:focus {
+    border: 1px solid var(--accent-color);
+    outline: 1px solid var(--accent-color);
+  }
 }
 
 /* Чекбокс */
